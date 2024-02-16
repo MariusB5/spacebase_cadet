@@ -1,13 +1,13 @@
 extends CharacterBody2D
 
 
-const SPEED = 400.0
-const JUMP_VELOCITY = -900.0
+const SPEED = 300.0
+const JUMP_VELOCITY = -850.0
 @onready var sprite_2d = $Sprite2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
+var last_direction = 1  # 1 for right, -1 for left
 
 func _physics_process(delta):
 	# Animations.
@@ -30,11 +30,12 @@ func _physics_process(delta):
 	var direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * SPEED
+		last_direction = direction  # Update the last direction only when moving
 	else:
-		velocity.x = move_toward(velocity.x, 0, 12)
+		velocity.x = move_toward(velocity.x, 0, 40)
 
 	move_and_slide()
 
-	var isLeft = velocity.x < 0
-	sprite_2d.flip_h = isLeft
+# Flip the sprite based on the last direction
+	sprite_2d.flip_h = last_direction < 0
 	
