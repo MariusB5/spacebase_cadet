@@ -38,4 +38,3 @@ func _physics_process(delta):
 
 # Flip the sprite based on the last direction
 	sprite_2d.flip_h = last_direction < 0
-	
