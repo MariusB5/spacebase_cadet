@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2dyk6xwttv81"]
+
+[ext_resource type="Texture2D" uid="uid://cpsfksobs3rtf" path="res://Cool Text - Spacebase Cadet 452725943233140.png" id="1_lpvjk"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_nae0s"]
+[ext_resource type="Texture2D" uid="uid://dgg6e8gj42g1e" path="res://Starfield_07-512x512.png" id="1_yrfh1"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_nae0s")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yrfh1")
+stretch_mode = 1
+
+[node name="Logo" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -501.5
+offset_top = -134.0
+offset_right = 501.5
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lpvjk")
+
+[node name="level1" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 420.0
+offset_right = -743.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Level 1"
+
+[node name="level2" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 570.0
+offset_right = -743.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Level 2"
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]

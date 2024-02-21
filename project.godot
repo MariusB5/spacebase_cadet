@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="platformer_tutorial"
-run/main_scene="res://main.tscn"
+config/name="spacebase_cadet"
+run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,10 @@ window/stretch/mode="canvas_items"
 [dotnet]
 
 project/assembly_name="platformer_tutorial"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
 
 [input]
 

@@ -1,3 +1,3 @@
-# platformer_tutorial
+# spacebase_cadet
 
-A simple 2D platformer videogame in *Godot Engine 4* based on a tutorial by [CocoCode](https://www.youtube.com/@CocoCode).
+A simple 2D platformer videogame in *Godot Engine 4*.
