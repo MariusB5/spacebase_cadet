@@ -38,13 +38,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 100.0
-offset_top = 420.0
-offset_right = -743.0
-offset_bottom = -224.0
+offset_top = 450.0
+offset_right = -902.0
+offset_bottom = -250.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 50
 text = "Level 1"
+flat = true
 
 [node name="level2" type="Button" parent="."]
 texture_filter = 1
@@ -52,13 +53,14 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 100.0
-offset_top = 570.0
-offset_right = -743.0
-offset_bottom = -74.0
+offset_top = 550.0
+offset_right = -902.0
+offset_bottom = -150.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 50
 text = "Level 2"
+flat = true
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]

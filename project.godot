@@ -29,6 +29,10 @@ project/assembly_name="platformer_tutorial"
 
 enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
 
+[gui]
+
+theme/custom_font="res://fonts/BebasNeue-Regular.ttf"
+
 [input]
 
 left={
