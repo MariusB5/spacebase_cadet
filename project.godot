@@ -25,10 +25,6 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="platformer_tutorial"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
-
 [gui]
 
 theme/custom_font="res://fonts/BebasNeue-Regular.ttf"
