@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmx5jiafmg8i8"
-path="res://.godot/imported/Green_Nebula_08-512x512.png-e1ba9c44ecd07134d229705611a186bd.ctex"
+uid="uid://d3lfybyviqsxp"
+path="res://.godot/imported/Blue_Nebula_07-512x512.png-28963c724534137a01220e845ac3f5ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Green_Nebula_08-512x512.png"
-dest_files=["res://.godot/imported/Green_Nebula_08-512x512.png-e1ba9c44ecd07134d229705611a186bd.ctex"]
+source_file="res://sprites/Blue_Nebula_07-512x512.png"
+dest_files=["res://.godot/imported/Blue_Nebula_07-512x512.png-28963c724534137a01220e845ac3f5ae.ctex"]
 
 [params]
 

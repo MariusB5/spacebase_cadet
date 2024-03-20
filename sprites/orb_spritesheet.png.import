@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgg6e8gj42g1e"
-path="res://.godot/imported/Starfield_07-512x512.png-e4a77b5a2e89f80fa199b7a6fe4d3bb7.ctex"
+uid="uid://bhqjcd1w7itsy"
+path="res://.godot/imported/orb_spritesheet.png-c718f21beda8822b78628889391decdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Starfield_07-512x512.png"
-dest_files=["res://.godot/imported/Starfield_07-512x512.png-e4a77b5a2e89f80fa199b7a6fe4d3bb7.ctex"]
+source_file="res://sprites/orb_spritesheet.png"
+dest_files=["res://.godot/imported/orb_spritesheet.png-c718f21beda8822b78628889391decdd.ctex"]
 
 [params]
 

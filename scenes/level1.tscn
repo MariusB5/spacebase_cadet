@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://c0355yu15hm35"]
 
-[ext_resource type="Script" path="res://game_manager.gd" id="1_rshhd"]
-[ext_resource type="Texture2D" uid="uid://dmx5jiafmg8i8" path="res://Green_Nebula_08-512x512.png" id="2_cqv71"]
-[ext_resource type="Texture2D" uid="uid://i1eks7lqqkmo" path="res://Terrain (16x16).png" id="3_5wqjv"]
-[ext_resource type="Texture2D" uid="uid://d2ty6l4w6e0e" path="res://techblocks2.png" id="4_v0514"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_rshhd"]
+[ext_resource type="Texture2D" uid="uid://dmx5jiafmg8i8" path="res://sprites/Green_Nebula_08-512x512.png" id="2_cqv71"]
+[ext_resource type="Texture2D" uid="uid://i1eks7lqqkmo" path="res://sprites/Terrain (16x16).png" id="3_5wqjv"]
+[ext_resource type="Texture2D" uid="uid://d2ty6l4w6e0e" path="res://sprites/techblocks2.png" id="4_v0514"]
 [ext_resource type="PackedScene" uid="uid://bwdtspc58q2l3" path="res://scenes/main_character.tscn" id="5_ls8nc"]
 [ext_resource type="PackedScene" uid="uid://c8inrotgowmon" path="res://scenes/collectable.tscn" id="6_vpvou"]
 [ext_resource type="PackedScene" uid="uid://bw8thw2bjbx1x" path="res://scenes/finish.tscn" id="7_qi73j"]

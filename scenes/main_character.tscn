@@ -1,9 +1,9 @@
 [gd_scene load_steps=27 format=3 uid="uid://bwdtspc58q2l3"]
 
-[ext_resource type="Texture2D" uid="uid://bb4pk3gsjb0vb" path="res://Jump (32x32).png" id="1_6mubf"]
-[ext_resource type="Script" path="res://scenes/main_character.gd" id="1_jnckd"]
-[ext_resource type="Texture2D" uid="uid://gl1ldsbo33p5" path="res://Idle (32x32).png" id="2_ygc16"]
-[ext_resource type="Texture2D" uid="uid://ol3ko1t4nym1" path="res://Run (32x32).png" id="4_6ot1d"]
+[ext_resource type="Texture2D" uid="uid://bb4pk3gsjb0vb" path="res://sprites/Jump (32x32).png" id="1_6mubf"]
+[ext_resource type="Script" path="res://scripts/main_character.gd" id="1_80nap"]
+[ext_resource type="Texture2D" uid="uid://gl1ldsbo33p5" path="res://sprites/Idle (32x32).png" id="2_ygc16"]
+[ext_resource type="Texture2D" uid="uid://ol3ko1t4nym1" path="res://sprites/Run (32x32).png" id="4_6ot1d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m5gx2"]
 atlas = ExtResource("2_ygc16")
@@ -168,7 +168,7 @@ radius = 25.0
 height = 60.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_jnckd")
+script = ExtResource("1_80nap")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
