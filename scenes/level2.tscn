@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://wei1t4sdpijd"]
+[gd_scene load_steps=14 format=3 uid="uid://wei1t4sdpijd"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_ocjcq"]
 [ext_resource type="Texture2D" uid="uid://d3lfybyviqsxp" path="res://sprites/Blue_Nebula_07-512x512.png" id="2_cskqh"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c8inrotgowmon" path="res://scenes/collectable.tscn" id="6_511yt"]
 [ext_resource type="PackedScene" uid="uid://bw8thw2bjbx1x" path="res://scenes/finish.tscn" id="7_ctu81"]
 [ext_resource type="PackedScene" uid="uid://d2dyk6xwttv81" path="res://scenes/main_menu.tscn" id="8_j1yuv"]
+[ext_resource type="Shader" path="res://shaders/crt_shader.gdshader" id="9_v7jbw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5g3vr"]
 texture = ExtResource("3_yv1hg")
@@ -1400,6 +1401,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5g3vr")
 sources/1 = SubResource("TileSetAtlasSource_ebdbh")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_poon2"]
+shader = ExtResource("9_v7jbw")
+
 [node name="Node" type="Node"]
 
 [node name="GameManager" type="Node" parent="."]
@@ -1491,3 +1495,14 @@ theme_override_font_sizes/font_size = 25
 text = "Score: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_poon2")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
