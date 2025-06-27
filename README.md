@@ -16,5 +16,5 @@ You play as a space-suited cadet exploring a sci-fi base. Your mission: collect 
 - 🔊 Sound effects  
 - 🔁 Quit to main menu option  
 
-## Assets
+### Assets
 - Character sprites by [Pixel Frog](https://pixelfrog-assets.itch.io/)
